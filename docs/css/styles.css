@@ -10,6 +10,45 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .nav-wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 38px;
+ }
+ .left-side {
+   display: flex;
+ }
+ .nav-wrapper > .left-side > div {
+   margin-right: 20px;
+   font-size: 0.9em;
+   text-transform: uppercase;
+ }
+ .nav-link-wrapper {
+   height: 22px;
+   border-bottom: 1px solid transparent;
+   transition: border-bottom 0.5s;
+ }
+
+ .nav-link-wrapper a {
+   color: #8a8a8a;
+   text-decoration: none;
+   transition: color 0.5s;
+ }
+
+ .nav-link-wrapper:hover {
+   border-bottom: 1px solid black;
+ }
+ .nav-link-wrapper a:hover {
+   color: black;
+ }
+
+ .active-nav-link {
+   border-bottom: 1px solid black;
+ }
+
+ .active-nav-link a{
+   color: black !important;
+ }
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -6994,7 +7033,9 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
+  font-style: italic;
+  font-variant: small-caps;
 }
 
 .mb-auto {
@@ -7290,7 +7331,7 @@ textarea.form-control-lg {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .text-decoration-none {
@@ -7365,7 +7406,8 @@ textarea.form-control-lg {
 }
 
 .text-white {
-  color: #fff !important;
+  color: antiquewhite !important;
+  color
 }
 
 .text-body {
@@ -10852,8 +10894,8 @@ header.masthead {
   background-color: #343a40;
   background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 header.masthead:before {
   content: "";
@@ -10866,20 +10908,20 @@ header.masthead:before {
   opacity: 0.5;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size:5.5rem;
   }
 }
 
 .showcase .showcase-text {
-  padding: 3rem;
+  padding: 1rem;
 }
 .showcase .showcase-img {
   min-height: 30rem;
